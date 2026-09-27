@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julian Vance — Portfolio &amp; Case Studies</title>
+    <meta
+      name="description"
+      content="A modern, GitHub Pages-ready personal engineering and design portfolio built with semantic HTML5, CSS3, and vanilla JavaScript."
+    />
+    <meta property="og:title" content="Julian Vance — Portfolio &amp; Case Studies" />
+    <meta
+      property="og:description"
+      content="A modern, GitHub Pages-ready personal engineering and design portfolio built with semantic HTML5, CSS3, and vanilla JavaScript."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Editorial Typography (Syne + Plus Jakarta Sans + JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Syne:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Relative Path Stylesheet for GitHub Pages Compatibility -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Bar Contract: 1 Row, 3 Zones -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Single Wordmark Element -->
+        <a href="./index.html" class="brand-wordmark">Julian Vance</a>
+
+        <!-- Zone 2: Primary Navigation Links -->
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="./index.html" class="nav-link" aria-current="page">Work</a>
+          <a href="#capabilities" class="nav-link">Capabilities</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Primary Actions -->
+        <div class="header-actions">
+          <button
+            type="button"
+            class="btn-icon"
+            data-action="toggle-theme"
+            aria-label="Switch theme"
+            title="Switch theme"
+          >
+            <span data-theme-icon aria-hidden="true">☾</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline header-desktop-cta"
+            data-action="open-add-project"
+          >
+            + Add Project
+          </button>
+          <a href="./contact.html" class="btn btn-primary header-desktop-cta">Start a Project</a>
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="btn-icon mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Toggle navigation menu"
+          >
+            <span data-menu-icon aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Accessible Mobile Navigation Drawer -->
+    <nav id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="./index.html" class="mobile-nav-link" aria-current="page">Work</a></li>
+        <li><a href="#capabilities" class="mobile-nav-link">Capabilities</a></li>
+        <li><a href="./about.html" class="mobile-nav-link">About &amp; Resume</a></li>
+        <li><a href="./contact.html" class="mobile-nav-link">Contact &amp; Inquiry</a></li>
+      </ul>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+        <button type="button" class="btn btn-outline" data-action="open-add-project">
+          + Add Custom Project
+        </button>
+        <a href="./contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <!-- 1. Split-Screen Editorial Hero -->
+      <section class="section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="kicker">PRINCIPAL SYSTEMS ARCHITECT &amp; DESIGN TECHNOLOGIST</span>
+            <h1 class="display-xl">
+              Architecting sub-millisecond interfaces and resilient distributed systems.
+            </h1>
+            <p class="body-lg">
+              I partner with engineering organizations to design and ship high-throughput WebAssembly
+              runtimes, local-first collaborative engines, and WCAG AAA design systems that scale
+              without runtime bloat.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#selected-works" class="btn btn-primary">Explore Selected Works</a>
+              <a href="./about.html" class="btn btn-outline">Experience &amp; Resume</a>
+            </div>
+
+            <!-- Claim-to-Proof Adjacency: Quantitative Proof Strip -->
+            <div class="hero-metrics" aria-label="Key architectural metrics">
+              <div>
+                <div class="metric-value tabular-nums">1.8M/s</div>
+                <div class="metric-label">Peak Columnar Stream Ingestion</div>
+              </div>
+              <div>
+                <div class="metric-value tabular-nums">4.2ms</div>
+                <div class="metric-label">p99 Browser Query Latency</div>
+              </div>
+              <div>
+                <div class="metric-value tabular-nums">100/100</div>
+                <div class="metric-label">Lighthouse Accessibility &amp; Speed</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Visual Frame -->
+          <div class="hero-visual-frame">
+            <div class="hero-image-wrapper">
+              <img
+                src="./assets/images/profile-portrait.svg"
+                alt="Julian Vance architectural studio portrait and telemetry overview"
+                width="800"
+                height="900"
+              />
+            </div>
+            <div class="hero-caption-bar">
+              <span>San Francisco, CA · Available for Q4 Advisory</span>
+              <span class="tabular-nums">37.7749° N, 122.4194° W</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Selected Works & Interactive Bento Catalog -->
+      <section id="selected-works" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="kicker">01. SELECTED CASE STUDIES (2024–2026)</span>
+              <h2 class="display-lg">Production Architecture &amp; Systems</h2>
+            </div>
+            <p id="projects-count-label" class="meta-inline tabular-nums">
+              Showing 6 of 6 architectural case studies
+            </p>
+          </div>
+
+          <!-- Interactive Filter, Search & Sort Controls -->
+          <div class="controls-toolbar">
+            <div class="segmented-control" role="group" aria-label="Filter projects by discipline">
+              <button type="button" class="filter-btn is-active" data-filter="all">
+                All Works
+              </button>
+              <button type="button" class="filter-btn" data-filter="systems">
+                Systems &amp; Infra
+              </button>
+              <button type="button" class="filter-btn" data-filter="interface">
+                Design Engineering
+              </button>
+              <button type="button" class="filter-btn" data-filter="opensource">
+                Open Source
+              </button>
+            </div>
+
+            <div class="search-sort-group">
+              <div class="search-input-wrap">
+                <label for="project-search" class="sr-only">Search projects</label>
+                <input
+                  type="search"
+                  id="project-search"
+                  class="search-input"
+                  placeholder="Search Rust, WASM, CRDT, CSS..."
+                  autocomplete="off"
+                />
+                <button
+                  type="button"
+                  id="project-search-clear"
+                  class="search-clear-btn"
+                  aria-label="Clear search query"
+                >
+                  ✕
+                </button>
+              </div>
+
+              <label for="project-sort" class="sr-only">Sort projects</label>
+              <select id="project-sort" class="sort-select" aria-label="Sort projects">
+                <option value="featured">Sort: Featured Order</option>
+                <option value="newest">Sort: Newest (2026–2024)</option>
+                <option value="impact">Sort: Primary Impact</option>
+              </select>
+
+              <button type="button" class="btn btn-outline" data-action="open-add-project">
+                + Add Project
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Bento Project Grid (Populated by ./js/script.js) -->
+          <div id="projects-bento-grid" class="bento-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- 3. Engineering Capabilities -->
+      <section id="capabilities" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="kicker">02. CORE DISCIPLINES</span>
+              <h2 class="display-lg">Technical Practice &amp; Standards</h2>
+            </div>
+            <a href="./about.html" class="text-action-link">
+              View Full Capability Matrix &amp; Resume →
+            </a>
+          </div>
+
+          <div class="capabilities-grid">
+            <article class="capability-item">
+              <span class="capability-index">01. Distributed &amp; Local-First Engines</span>
+              <h3 class="heading-md">WebAssembly, Columnar Streams &amp; CRDTs</h3>
+              <p class="body-md">
+                Designing browser-native computation kernels in Rust and TypeScript that process
+                hundreds of thousands of records off the main thread using Apache Arrow, IndexedDB,
+                and conflict-free state replication.
+              </p>
+              <div class="meta-inline" style="margin-top: auto; padding-top: 12px;">
+                <span>Rust</span>
+                <span class="meta-sep">·</span>
+                <span>WebAssembly</span>
+                <span class="meta-sep">·</span>
+                <span>IndexedDB</span>
+                <span class="meta-sep">·</span>
+                <span>WebRTC</span>
+              </div>
+            </article>
+
+            <article class="capability-item">
+              <span class="capability-index">02. Design Systems &amp; Accessibility</span>
+              <h3 class="heading-md">Zero-Runtime Token Architecture</h3>
+              <p class="body-md">
+                Building deterministic AST token compilers and semantic HTML5/CSS3 component
+                systems enforced by automated WCAG AAA contrast gates, full keyboard navigation, and
+                sub-150ms interaction budgets.
+              </p>
+              <div class="meta-inline" style="margin-top: auto; padding-top: 12px;">
+                <span>CSS Custom Properties</span>
+                <span class="meta-sep">·</span>
+                <span>WCAG AAA</span>
+                <span class="meta-sep">·</span>
+                <span>ARIA 1.2</span>
+              </div>
+            </article>
+
+            <article class="capability-item">
+              <span class="capability-index">03. Performance &amp; Static Infrastructure</span>
+              <h3 class="heading-md">Hermetic Builds &amp; Edge Telemetry</h3>
+              <p class="body-md">
+                Eliminating fragile third-party dependencies in favor of self-contained static
+                deployments, precomputed search indices, and real-time network latency diagnostics.
+              </p>
+              <div class="meta-inline" style="margin-top: auto; padding-top: 12px;">
+                <span>GitHub Pages</span>
+                <span class="meta-sep">·</span>
+                <span>WebGPU</span>
+                <span class="meta-sep">·</span>
+                <span>Core Web Vitals</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Attributable Client Testimonials (Claim-to-Proof Rigor) -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="kicker">03. PEER &amp; EXECUTIVE ENDORSEMENTS</span>
+              <h2 class="display-lg">Verified Engineering Outcomes</h2>
+            </div>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <blockquote class="testimonial-quote">
+                “Before Julian re-architected our telemetry query layer into a Rust/WASM ring
+                buffer, our incident responders faced 6-second UI freezes during peak traffic spikes.
+                The Chronos engine dropped 99th-percentile query latency to 4.2ms and cut browser
+                RAM usage by 64%.”
+              </blockquote>
+              <div>
+                <div style="font-weight: 700;">Dr. Elena Rostova</div>
+                <div class="meta-inline">
+                  <span>VP of Infrastructure</span>
+                  <span class="meta-sep">·</span>
+                  <span>CloudScale Telemetry Group</span>
+                </div>
+                <div class="testimonial-outcome tabular-nums">
+                  Outcome: 6,000ms → 4.2ms p99 Query Latency (-64% Memory)
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <blockquote class="testimonial-quote">
+                “Julian unified four fragmented frontend teams under the Aether Design System. By
+                replacing our heavy runtime CSS-in-JS library with his static token compiler, our
+                bundle size shrank by 92 KB and every single view passed external WCAG AAA audits on
+                the first review.”
+              </blockquote>
+              <div>
+                <div style="font-weight: 700;">Marcus Thorne</div>
+                <div class="meta-inline">
+                  <span>Head of Product Engineering</span>
+                  <span class="meta-sep">·</span>
+                  <span>Meridian Financial Platform</span>
+                </div>
+                <div class="testimonial-outcome tabular-nums">
+                  Outcome: -92 KB JS Bundle · 100% Automated WCAG Compliance
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Case Study Lightbox Modal -->
+    <div
+      id="case-study-modal"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Project Case Study Details"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <button type="button" id="prev-case-btn" class="btn btn-outline">← Previous</button>
+            <button type="button" id="next-case-btn" class="btn btn-outline">Next →</button>
+          </div>
+          <button
+            type="button"
+            id="close-case-modal"
+            class="btn-icon"
+            aria-label="Close case study modal"
+          >
+            ✕
+          </button>
+        </div>
+        <div id="case-study-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Add / Manage Custom Portfolio Project Modal (LocalStorage) -->
+    <div
+      id="add-project-modal"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="add-project-modal-title"
+    >
+      <div class="modal-dialog" style="max-width: 620px;">
+        <div class="modal-header">
+          <div>
+            <span class="kicker" style="margin-bottom: 4px;">BROWSER LOCALSTORAGE MANAGER</span>
+            <h2 id="add-project-modal-title" class="heading-md">Add Custom Portfolio Project</h2>
+          </div>
+          <button
+            type="button"
+            id="close-add-project-modal"
+            class="btn-icon"
+            aria-label="Close add project modal"
+          >
+            ✕
+          </button>
+        </div>
+
+        <p class="body-md" style="margin-bottom: 20px;">
+          Because GitHub Pages hosts static files without a backend database, custom projects added
+          here are persisted directly in your browser’s <code>localStorage</code> so you can preview
+          and test new case studies immediately.
+        </p>
+
+        <form id="add-project-form" novalidate>
+          <div class="form-group">
+            <label for="new-project-title" class="form-label">Project Title *</label>
+            <input
+              type="text"
+              id="new-project-title"
+              class="form-control"
+              placeholder="e.g., Hyperion Zero-Copy Log Parser"
+              required
+            />
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="new-project-category" class="form-label">Discipline Category</label>
+              <select id="new-project-category" class="form-control">
+                <option value="systems">Systems &amp; Infrastructure</option>
+                <option value="interface">Design Engineering</option>
+                <option value="opensource">Open Source Tooling</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-project-metric" class="form-label">Headline Metric</label>
+              <input
+                type="text"
+                id="new-project-metric"
+                class="form-control"
+                placeholder="e.g., 2.4M ops/sec · 1.1ms p99"
+              />
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="new-project-stack" class="form-label">Tech Stack (Separator: ·) *</label>
+              <input
+                type="text"
+                id="new-project-stack"
+                class="form-control"
+                placeholder="e.g., Rust · WebAssembly · SIMD"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="new-project-image" class="form-label">Visual Diagram Asset</label>
+              <select id="new-project-image" class="form-control">
+                <option value="./assets/images/project-chronos.svg">Chronos Telemetry Diagram</option>
+                <option value="./assets/images/project-aether.svg">Aether Token Compiler</option>
+                <option value="./assets/images/project-veritas.svg">Veritas CRDT Mesh</option>
+                <option value="./assets/images/project-kinetix.svg">Kinetix Acoustic Shader</option>
+                <option value="./assets/images/project-lumina.svg">Lumina Static AST</option>
+                <option value="./assets/images/project-pulse.svg">Pulse Anycast Map</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="new-project-summary" class="form-label">Architectural Summary *</label>
+            <textarea
+              id="new-project-summary"
+              class="form-control"
+              placeholder="Describe the engineering problem, architecture, and measurable outcome..."
+              required
+            ></textarea>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;">
+            <button type="button" id="reset-default-projects" class="btn btn-outline">
+              Reset to Default 6 Projects
+            </button>
+            <button type="submit" class="btn btn-primary">Save Project to Portfolio</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Quiet Editorial Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong style="color: var(--text-primary);">Julian Vance</strong>
+          <span> · Principal Systems Architect · Hosted on GitHub Pages</span>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Work</a>
+          <a href="./about.html">About &amp; Resume</a>
+          <a href="./contact.html">Contact</a>
+          <a href="#main-content">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Relative Path Vanilla JS Bundle -->
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

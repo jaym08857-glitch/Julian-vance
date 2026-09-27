@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Pulse Edge Network Latency and BGP Route Visualizer">
+  <rect width="1200" height="750" fill="#0D1117" />
+  <!-- World Meridian Grid -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+    <ellipse cx="600" cy="375" rx="460" ry="230" fill="none" />
+    <ellipse cx="600" cy="375" rx="310" ry="230" fill="none" />
+    <ellipse cx="600" cy="375" rx="150" ry="230" fill="none" />
+    <line x1="140" y1="375" x2="1060" y2="375" />
+    <line x1="600" y1="145" x2="600" y2="605" />
+  </g>
+  <!-- BGP Anycast Route Arcs -->
+  <path d="M290 340 Q 450 180 620 290" fill="none" stroke="#3B82F6" stroke-width="3" />
+  <path d="M620 290 Q 770 190 910 330" fill="none" stroke="#60A5FA" stroke-width="3" />
+  <path d="M290 340 Q 590 520 910 330" fill="none" stroke="#93C5FD" stroke-width="2" stroke-dasharray="7 5" />
+  <!-- PoP Nodes -->
+  <circle cx="290" cy="340" r="9" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.5" />
+  <text x="235" y="380" fill="#F4F4F0" font-family="monospace" font-size="14">SFO-01 (11ms)</text>
+
+  <circle cx="620" cy="290" r="9" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.5" />
+  <text x="565" y="265" fill="#F4F4F0" font-family="monospace" font-size="14">FRA-04 (18ms)</text>
+
+  <circle cx="910" cy="330" r="9" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.5" />
+  <text x="855" y="370" fill="#F4F4F0" font-family="monospace" font-size="14">NRT-02 (24ms)</text>
+
+  <text x="90" y="95" fill="#60A5FA" font-family="monospace" font-size="14" letter-spacing="1.5">PULSE ANYCAST TELEMETRY · 38 GLOBAL EDGE POPS</text>
+  <text x="90" y="665" fill="#FFFFFF" font-family="sans-serif" font-size="26" font-weight="600">Real-Time BGP Route Anomaly Detection</text>
+</svg>

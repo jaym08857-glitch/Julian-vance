@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Aether Design System token compiler and typography scale">
+  <rect width="1200" height="750" fill="#F4F4F0" />
+  <rect x="60" y="60" width="1080" height="630" rx="12" fill="#FFFFFF" stroke="#D8D8D0" stroke-width="2" />
+  <!-- Left Column: Typography & Contrast Spec -->
+  <line x1="480" y1="60" x2="480" y2="690" stroke="#E2E2DC" stroke-width="1.5" />
+  <text x="105" y="130" fill="#6B7280" font-family="monospace" font-size="13" letter-spacing="1">AETHER DESIGN SYSTEM · TOKEN COMPILER</text>
+  <text x="105" y="255" fill="#111111" font-family="sans-serif" font-size="108" font-weight="700">Aa</text>
+  <text x="275" y="245" fill="#2563EB" font-family="monospace" font-size="18">Contrast 14.8:1 (AAA)</text>
+  <line x1="105" y1="305" x2="435" y2="305" stroke="#E2E2DC" stroke-width="1.5" />
+  <!-- Color Swatch Blocks -->
+  <rect x="105" y="345" width="95" height="95" rx="8" fill="#111111" />
+  <rect x="218" y="345" width="95" height="95" rx="8" fill="#2563EB" />
+  <rect x="331" y="345" width="95" height="95" rx="8" fill="#EAEAE4" stroke="#D0D0C8" />
+  <text x="105" y="468" fill="#111111" font-family="monospace" font-size="13">#111111</text>
+  <text x="218" y="468" fill="#2563EB" font-family="monospace" font-size="13">#2563EB</text>
+  <text x="331" y="468" fill="#52525B" font-family="monospace" font-size="13">#EAEAE4</text>
+  <!-- Right Column: Component Tokens Tree -->
+  <rect x="535" y="115" width="545" height="240" rx="8" fill="#141418" />
+  <text x="570" y="165" fill="#60A5FA" font-family="monospace" font-size="15">tokens.color.surface.elevated</text>
+  <text x="570" y="205" fill="#E5E7EB" font-family="monospace" font-size="14">  light: "hsl(60 14% 95%)"</text>
+  <text x="570" y="235" fill="#E5E7EB" font-family="monospace" font-size="14">  dark:  "hsl(240 10% 6%)"</text>
+  <text x="570" y="275" fill="#34D399" font-family="monospace" font-size="14">✓ 48 Components · 0 KB Runtime Overhead</text>
+  <!-- Interactive Scale Preview Bars -->
+  <rect x="535" y="395" width="545" height="72" rx="8" fill="#F8F8F5" stroke="#D8D8D0" />
+  <text x="565" y="438" fill="#111111" font-family="sans-serif" font-size="18" font-weight="600">01. Semantic Token Pipeline</text>
+  <text x="935" y="438" fill="#2563EB" font-family="monospace" font-size="14">CSS Variables</text>
+  <rect x="535" y="490" width="545" height="72" rx="8" fill="#F8F8F5" stroke="#D8D8D0" />
+  <text x="565" y="533" fill="#111111" font-family="sans-serif" font-size="18" font-weight="600">02. Automated WCAG Contrast Gate</text>
+  <text x="935" y="533" fill="#111111" font-family="monospace" font-size="14">100% Verified</text>
+</svg>

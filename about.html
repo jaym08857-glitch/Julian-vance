@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About &amp; Resume — Julian Vance</title>
+    <meta
+      name="description"
+      content="Architectural philosophy, career timeline, technical capability matrix, and printable resume of Julian Vance, Principal Systems Architect."
+    />
+    <meta property="og:title" content="About &amp; Resume — Julian Vance" />
+    <meta
+      property="og:description"
+      content="Architectural philosophy, career timeline, technical capability matrix, and printable resume of Julian Vance."
+    />
+    <meta property="og:type" content="profile" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Syne:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Bar Contract: 1 Row, 3 Zones -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand-wordmark">Julian Vance</a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="./index.html" class="nav-link">Work</a>
+          <a href="./index.html#capabilities" class="nav-link">Capabilities</a>
+          <a href="./about.html" class="nav-link" aria-current="page">About</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            class="btn-icon"
+            data-action="toggle-theme"
+            aria-label="Switch theme"
+            title="Switch theme"
+          >
+            <span data-theme-icon aria-hidden="true">☾</span>
+          </button>
+          <button type="button" id="print-resume-btn" class="btn btn-outline header-desktop-cta">
+            Print / Save PDF
+          </button>
+          <a href="./contact.html" class="btn btn-primary header-desktop-cta">Start a Project</a>
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="btn-icon mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Toggle navigation menu"
+          >
+            <span data-menu-icon aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="./index.html" class="mobile-nav-link">Work</a></li>
+        <li><a href="./index.html#capabilities" class="mobile-nav-link">Capabilities</a></li>
+        <li><a href="./about.html" class="mobile-nav-link" aria-current="page">About &amp; Resume</a></li>
+        <li><a href="./contact.html" class="mobile-nav-link">Contact &amp; Inquiry</a></li>
+      </ul>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+        <button type="button" id="download-resume-md-mobile" class="btn btn-outline" onclick="document.getElementById('download-resume-md-btn').click()">
+          Download .MD Resume
+        </button>
+        <a href="./contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <!-- 1. Editorial Biography & Philosophy -->
+      <section class="section">
+        <div class="container about-lead-grid">
+          <div>
+            <span class="kicker">ABOUT &amp; ARCHITECTURAL ETHOS</span>
+            <h1 class="display-xl" style="margin-bottom: 24px;">
+              Software should feel instantaneous, intelligible, and enduring.
+            </h1>
+            <p class="body-lg" style="margin-bottom: 20px;">
+              I am a San Francisco-based Principal Systems Architect and Design Technologist with
+              over eight years of experience bridging low-level distributed telemetry and high-craft
+              human interfaces.
+            </p>
+            <p class="body-md" style="margin-bottom: 28px;">
+              Whether compiling Rust memory buffers to WebAssembly for real-time observability or
+              defining automated WCAG AAA token pipelines across multi-product organizations, my
+              work prioritizes clarity, deterministic state, and respect for the end user’s hardware.
+            </p>
+
+            <div class="hero-cta-row no-print">
+              <button type="button" id="download-resume-md-btn" class="btn btn-primary">
+                Download Resume (.MD)
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline"
+                onclick="window.print()"
+              >
+                Print Formatted CV
+              </button>
+              <a href="./contact.html" class="btn btn-outline">Inquire Availability</a>
+            </div>
+          </div>
+
+          <div class="hero-visual-frame">
+            <div class="hero-image-wrapper">
+              <img
+                src="./assets/images/profile-portrait.svg"
+                alt="Julian Vance architectural portrait"
+                width="800"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+            <div class="hero-caption-bar">
+              <span>B.S. Computer Science · UC Berkeley</span>
+              <span class="tabular-nums">8+ Years Production</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Interactive Experience Timeline -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="kicker">01. CAREER CHRONOLOGY</span>
+              <h2 class="display-lg">Engineering Leadership &amp; Roles</h2>
+            </div>
+          </div>
+
+          <div class="timeline-list">
+            <!-- Role 1 -->
+            <article class="timeline-item">
+              <div class="timeline-period">
+                <div>2023 — PRESENT</div>
+                <div style="margin-top: 4px;">San Francisco, CA</div>
+              </div>
+              <div>
+                <h3 class="timeline-role">Principal Systems Architect</h3>
+                <div class="meta-inline" style="margin-bottom: 12px;">
+                  <span>CloudScale Telemetry Group</span>
+                  <span class="meta-sep">·</span>
+                  <span>Rust, WebAssembly, Apache Arrow, TypeScript</span>
+                </div>
+                <p class="body-md">
+                  Lead architect for the Chronos browser-side columnar query engine and streaming
+                  observability suite serving 14,000+ enterprise reliability engineers daily.
+                </p>
+                <button
+                  type="button"
+                  class="timeline-details-toggle no-print"
+                  data-toggle-timeline="role-notes-1"
+                  aria-expanded="false"
+                >
+                  Read Architectural Notes ↓
+                </button>
+                <div id="role-notes-1" class="timeline-expanded-content">
+                  <p>
+                    • Replaced legacy JSON REST polling with zero-copy Apache Arrow IPC streams over
+                    WebSockets, reducing p99 query latency from 6,000ms to 4.2ms.<br />
+                    • Mentored a 12-engineer systems and frontend group on deterministic memory
+                    management and offscreen Canvas rendering.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Role 2 -->
+            <article class="timeline-item">
+              <div class="timeline-period">
+                <div>2021 — 2023</div>
+                <div style="margin-top: 4px;">New York / Remote</div>
+              </div>
+              <div>
+                <h3 class="timeline-role">Lead Design Technologist</h3>
+                <div class="meta-inline" style="margin-bottom: 12px;">
+                  <span>Meridian Financial Platform</span>
+                  <span class="meta-sep">·</span>
+                  <span>Design Systems, AST Token Compiler, WCAG AAA</span>
+                </div>
+                <p class="body-md">
+                  Created the Aether Design System and static CSS token compiler adopted across 4
+                  core institutional trading and analytics applications.
+                </p>
+                <button
+                  type="button"
+                  class="timeline-details-toggle no-print"
+                  data-toggle-timeline="role-notes-2"
+                  aria-expanded="false"
+                >
+                  Read Architectural Notes ↓
+                </button>
+                <div id="role-notes-2" class="timeline-expanded-content">
+                  <p>
+                    • Eliminated 92 KB of runtime CSS-in-JS overhead by building a build-time W3C
+                    Design Token compiler outputting pure CSS Custom Properties.<br />
+                    • Authored automated CI accessibility gates verifying 100% keyboard focus-ring
+                    integrity and perceptual contrast compliance.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Role 3 -->
+            <article class="timeline-item">
+              <div class="timeline-period">
+                <div>2018 — 2021</div>
+                <div style="margin-top: 4px;">San Francisco, CA</div>
+              </div>
+              <div>
+                <h3 class="timeline-role">Senior Frontend &amp; Protocol Engineer</h3>
+                <div class="meta-inline" style="margin-bottom: 12px;">
+                  <span>Veritas Research Labs</span>
+                  <span class="meta-sep">·</span>
+                  <span>CRDTs, IndexedDB, WebRTC, Semantic HTML5</span>
+                </div>
+                <p class="body-md">
+                  Engineered local-first collaborative document editing protocols with offline
+                  storage and peer-to-peer state convergence.
+                </p>
+                <button
+                  type="button"
+                  class="timeline-details-toggle no-print"
+                  data-toggle-timeline="role-notes-3"
+                  aria-expanded="false"
+                >
+                  Read Architectural Notes ↓
+                </button>
+                <div id="role-notes-3" class="timeline-expanded-content">
+                  <p>
+                    • Designed Hybrid Logical Clock (HLC) synchronization trees capable of merging
+                    100,000+ concurrent offline edits in under 15ms.<br />
+                    • Built zero-dependency static documentation tooling deployed across GitHub
+                    Pages subdirectories.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Filterable Technical Capability Matrix -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="kicker">02. SPECIFICATION MATRIX</span>
+              <h2 class="display-lg">Technical Capabilities &amp; Tooling</h2>
+            </div>
+
+            <div class="segmented-control no-print" role="group" aria-label="Filter skills matrix">
+              <button type="button" class="filter-btn is-active" data-skill-filter="all">
+                All Domains
+              </button>
+              <button type="button" class="filter-btn" data-skill-filter="systems">
+                Systems
+              </button>
+              <button type="button" class="filter-btn" data-skill-filter="frontend">
+                Interface &amp; Web
+              </button>
+              <button type="button" class="filter-btn" data-skill-filter="leadership">
+                Architecture
+              </button>
+            </div>
+          </div>
+
+          <div class="skills-table-wrap">
+            <table class="skills-table">
+              <thead>
+                <tr>
+                  <th>CAPABILITY DOMAIN</th>
+                  <th>PRIMARY TECHNOLOGIES &amp; STANDARDS</th>
+                  <th>PRODUCTION EXPERIENCE</th>
+                  <th>BENCHMARK / OUTPUT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-skill-domain="systems">
+                  <td><strong>Systems &amp; WebAssembly</strong></td>
+                  <td>Rust · WebAssembly (wasm-bindgen) · C++ · SIMD</td>
+                  <td class="tabular-nums">6 Years</td>
+                  <td class="tabular-nums">1.8M writes/sec columnar ingestion</td>
+                </tr>
+                <tr data-skill-domain="systems">
+                  <td><strong>Local-First &amp; Storage</strong></td>
+                  <td>CRDTs · IndexedDB · WebRTC DataChannels · Merkle-DAG</td>
+                  <td class="tabular-nums">5 Years</td>
+                  <td class="tabular-nums">0ms local commit · &lt;15ms P2P sync</td>
+                </tr>
+                <tr data-skill-domain="frontend">
+                  <td><strong>Web Standards &amp; UI</strong></td>
+                  <td>Semantic HTML5 · Modern CSS3 · Vanilla ES2024+ · TypeScript</td>
+                  <td class="tabular-nums">8 Years</td>
+                  <td class="tabular-nums">100/100 Lighthouse · 0 KB bloat</td>
+                </tr>
+                <tr data-skill-domain="frontend">
+                  <td><strong>Graphics &amp; Audio DSP</strong></td>
+                  <td>WebGPU (WGSL) · Canvas 2D · SVG Geometry · AudioWorklet</td>
+                  <td class="tabular-nums">5 Years</td>
+                  <td class="tabular-nums">120 FPS shaders · 1.9ms audio quantum</td>
+                </tr>
+                <tr data-skill-domain="leadership">
+                  <td><strong>Design Systems &amp; A11y</strong></td>
+                  <td>W3C Design Tokens · WCAG AAA · ARIA 1.2 · AST Compilers</td>
+                  <td class="tabular-nums">7 Years</td>
+                  <td class="tabular-nums">48 accessible primitives across 4 teams</td>
+                </tr>
+                <tr data-skill-domain="leadership">
+                  <td><strong>Static &amp; Edge Delivery</strong></td>
+                  <td>GitHub Pages · Subdirectory Routing · CI/CD Perf Budgets</td>
+                  <td class="tabular-nums">8 Years</td>
+                  <td class="tabular-nums">Zero-config hermetic static deployments</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong style="color: var(--text-primary);">Julian Vance</strong>
+          <span> · Principal Systems Architect · Hosted on GitHub Pages</span>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Work</a>
+          <a href="./about.html">About &amp; Resume</a>
+          <a href="./contact.html">Contact</a>
+          <a href="#main-content">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

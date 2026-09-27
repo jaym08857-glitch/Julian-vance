@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Chronos Distributed Time-Series Query Engine visualization">
+  <defs>
+    <linearGradient id="chronosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#151C2C" />
+    </linearGradient>
+    <linearGradient id="waveFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(37,99,235,0.42)" />
+      <stop offset="100%" stop-color="rgba(37,99,235,0.0)" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#chronosBg)" />
+  <!-- Grid Lines -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+    <line x1="80" y1="120" x2="1120" y2="120" />
+    <line x1="80" y1="240" x2="1120" y2="240" />
+    <line x1="80" y1="360" x2="1120" y2="360" />
+    <line x1="80" y1="480" x2="1120" y2="480" />
+    <line x1="80" y1="600" x2="1120" y2="600" />
+    <line x1="260" y1="100" x2="260" y2="640" />
+    <line x1="520" y1="100" x2="520" y2="640" />
+    <line x1="780" y1="100" x2="780" y2="640" />
+    <line x1="1040" y1="100" x2="1040" y2="640" />
+  </g>
+  <!-- Telemetry Area Curve -->
+  <path d="M80 540 C180 510, 240 420, 340 430 C440 440, 500 280, 610 260 C720 240, 790 340, 890 210 C970 110, 1040 160, 1120 135 L1120 600 L80 600 Z" fill="url(#waveFill)" />
+  <path d="M80 540 C180 510, 240 420, 340 430 C440 440, 500 280, 610 260 C720 240, 790 340, 890 210 C970 110, 1040 160, 1120 135" fill="none" stroke="#3B82F6" stroke-width="4" />
+  <path d="M80 575 C200 560, 310 510, 440 490 C570 470, 680 390, 820 375 C940 360, 1030 310, 1120 290" fill="none" stroke="#93C5FD" stroke-width="2" stroke-dasharray="6 6" />
+  <!-- Key Data Nodes -->
+  <circle cx="340" cy="430" r="6" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2" />
+  <circle cx="610" cy="260" r="6" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2" />
+  <circle cx="890" cy="210" r="8" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.5" />
+  <!-- Metric Callout Frame -->
+  <rect x="80" y="70" width="380" height="110" rx="8" fill="rgba(17,24,39,0.9)" stroke="rgba(255,255,255,0.14)" />
+  <text x="108" y="106" fill="#93C5FD" font-family="monospace" font-size="13" letter-spacing="1.2">CHRONOS STORAGE ENGINE · RUST + WASM</text>
+  <text x="108" y="148" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="700">1.8M writes/sec · 4.2ms p99</text>
+  <!-- Bottom Axis Labels -->
+  <text x="80" y="675" fill="#9CA3AF" font-family="monospace" font-size="14">00:00 UTC</text>
+  <text x="500" y="675" fill="#9CA3AF" font-family="monospace" font-size="14">12:00 UTC · COMPACTION WINDOW</text>
+  <text x="995" y="675" fill="#60A5FA" font-family="monospace" font-size="14">ZERO-ALLOC STREAM</text>
+</svg>
